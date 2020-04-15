@@ -16,7 +16,7 @@
       </nav>
       <div class="container">
         <div id="App" class="row pt-3">
-            <div class="col-md-4 col-sm-4 col-xl-4">
+            <div class="col-md-4">
                 <div class="card">
                     <div class="card-header">New comment</div>
                     <form id="comment-form" class="card-body">
@@ -28,27 +28,26 @@
                         <div class="form-group">
                             <input type="text" id="description" placeholder="Comment" class="form-control" required />
                         </div>
-                        <button type="submit" class="btn btn-primary btn-block text-center">Send Comment</button>
+                        <button type="submit" class="btn btn-primary btn-block text-center">Save Task</button>
                     </form>
                 </div>
             </div>
-            <div class="col-md-8 col-sm-8 col-xl-8">
-                <table id="mytable" class="table table-bordered table-striped">
+            <div class="col-md-8">
+                <table class="table">
                     <thead>
                         <tr>
                             <th>ID</th>
-                            <th>Name</th>
-                            <th>Description</th>
-                            <th>Tools</th>
+                            <th>Name comment</th>
+                            <th>Comment</th>
+                            <th>Actions</th>
                         </tr>
                     </thead>
                     <tbody id="comments"></tbody>
                 </table>
             </div>
         </div>
-    </div>
+      </div>
     <!-- Optional JavaScript -->
-    
     <script src="http://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
     <script src="app.js"></script>
     

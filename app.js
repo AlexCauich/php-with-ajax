@@ -22,7 +22,7 @@ $(document).ready(function () {
             ui.showMessage('Edited successfully', 'warning');
         }else {
             const ui = new UI (); 
-            ui.showMessage('Comment Added Successfully', 'success');
+            ui.showMessage('Comment Added Successfully', 'primary');
         }
 
         $.post(url, postData, function(response) {
@@ -84,7 +84,9 @@ $(document).ready(function () {
             edit = true;
         });
     });
+
 });
+
 
 class UI {
     showMessage(message, cssClass) {
